@@ -1,7 +1,9 @@
 // Based in Nicolas Gallagher's git.io/normalize
 normalize-text()
-  abbr[title] // + style not present in IE 8~11, Safari, and Chrome.
-    border-bottom 1px dotted
+  abbr[title] // + style inconsistent styling of `abbr[title]`.
+    border-bottom: none // Correct styling in Firefox 39 and Opera 12.
+    text-decoration: underline // Correct missing styling in Chrome, Edge, IE, Opera, and Safari.
+    text-decoration: underline dotted
 
   dfn // + style not present in Safari and Chrome.
     font-style italic
